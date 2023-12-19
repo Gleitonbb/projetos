@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1> Almentando imagem</h1>
+    <p>Tente almentar a Imagem</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagenstamanhosdiferente/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagenstamanhosdiferente/foto-m.png" type="image/png">
+        <img src="imagenstamanhosdiferente/foto-g.png" alt="imagem flexivel">
+    </picture>
+   
+</body>
+</html>

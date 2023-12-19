@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexando audio no Site</title>
+    <style>
+        body{
+            background-color: rgb(155, 128, 128);
+        }
+    </style>
+</head>
+<body>
+    <h1>Como anexar audio so Site</h1>
+    <p>musica escolhida</p>
+    <audio src="audio/somgleiton1.mp3" controls></audio><br>
+    <audio src="audio/somgleiton2.mp3" controls></audio>
+    <h2>Esta e a outra forma de colocar Audios</h2>
+    <audio preload="metadata">
+       <source src="audio/somgleiton1.mp3" type="audio/mpeg"> 
+       <source src="audio/somgleiton1.mp3.ogg" type="audio/ogg"> 
+       <source src="audio/somgleiton1.mp3.wav" type="audio/wav">
+       <p>infelismente seu navegador não consegue reproduzir audio<a href="audio/somgleiton1.mp3">Clique aqui  para Baixar este arquivo</a></p>
+       
+     </audio>
+    
+</body>
+</html>
