@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(233, 101, 101);
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        table{
+            width: 500px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(189, 177, 177);
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+        .num{
+            text-align: right;
+        }
+        .cor{
+            color: blue;
+            cursor: pointer;
+        }
+        thead, tfoot{
+            background-color: rgb(172, 169, 169);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabela Grande</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="cor">Rio de Janeiro</td>
+                <td class="num">11 355 411</td>
+            </tr>
+            <tr>
+                <td class="cor">São Paulo</td>
+                <td class="num">17 258 144</td>
+            </tr>
+            <tr>
+                <td class="cor">Amapá</td>
+                <td class="num">1 585 987</td>
+            </tr>
+            <tr>
+                <td class="cor">Espirito Santo</td>
+                <td class="num">3 253 100</td>
+            </tr>
+            <tr>
+                <td class="cor">pará</td>
+                <td class="num">4 985 112</td>
+            </tr>
+            <tr>
+                <td class="cor">Piaui</td>
+                <td class="num">3 125 325</td>
+            </tr>
+            <tr>
+                <td class="cor">Amasonas</td>
+                <td class="num">6 365 987</td>
+            </tr>
+            <tr>
+                <td class="cor">Maranhão</td>
+                <td class="num">6 477 022</td>
+            </tr>
+            <tr>
+                <td class="cor">Ceará</td>
+                <td class="num">4 522 424</td>
+            </tr>
+            <tr>
+                <td class="cor">Mato Grosso</td>
+                <td class="num">8 544 158</td>
+            </tr>
+            <tr>
+                <td class="cor">Roraima</td>
+                <td class="num">2 458 100</td>
+            </tr>
+            <tr>
+                <td class="cor">Bahia</td>
+                <td class="num">15 851 544</td>
+            </tr>
+            <tr>
+                <td class="cor">Minas Gerais</td>
+                <td class="num">17 815 848</td>
+            </tr>
+            <tr>
+                <td class="cor">Goias</td>
+                <td class="num">7 860 648</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
