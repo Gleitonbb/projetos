@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h1>Iniciando Estudos Select</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+               <optgroup label="Região Suldeste">
+                <option value="" selected>--Escolha--</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="SP">São Paulo</option>
+                <!-- Selected deixa o formulario marcado com a escrita -->
+              </optgroup>
+
+              <optgroup label="Região Centroeste">
+                <option value="GO">Goias</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+              </optgroup> 
+              
+              <optgroup label="Região Norte">
+                <option value="Ma">Maranhão</option>
+                <option value="PA">Pará</option>
+                <option value="AM">Amazonas</option>
+                <option value="RO">Roraima</option>
+             </optgroup>
+       </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof">
+             <datalist id="lisprof">
+                <option value="ADM">Administrador</option>
+                <option value="MD">Medicina</option>
+                <option value="DED">Desenvolvedor</option>
+                <option value="EG">Engenheiro</option>
+             </datalist>
+        </p>
+    </form>
+</body>
+</html>
